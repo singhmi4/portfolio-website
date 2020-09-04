@@ -202,8 +202,15 @@ header {
     position: fixed;
 }
 
+.nav-open .hamburger,
+.nav-open .hamburger::before {
+    background: var(--clr-light);
+}
+
+
 .nav-open .hamburger {
     transform: rotate(.625turn);
+
 }
 
 .nav-open .hamburger::before {
@@ -222,7 +229,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -454,4 +461,18 @@ header {
 
 .footer__link:hover {
     text-decoration: underline;
+}
+
+/* Portfolio Individual Item Styles */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
