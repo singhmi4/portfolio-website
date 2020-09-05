@@ -16,6 +16,7 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #72efdd;
+    --clr-link: #3D2DE8;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -327,6 +328,10 @@ header {
     margin: 0 auto;
 }
 
+.service p {
+    text-align: justify;
+}
+
 @media (min-width: 800px) {
     .services {
         display: flex;
@@ -380,6 +385,19 @@ header {
         grid-area: img;
         position: relative;
         z-index: 2;
+    }
+
+    .about-me a { 
+        color: var(--clr-link); 
+        text-decoration: none;
+    }
+    
+    .about-me__link {
+        font-weight: var(--fw-bold);
+    }
+
+    .about-me__link:hover {
+        text-decoration: underline;
     }
 }
 
