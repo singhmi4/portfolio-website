@@ -405,11 +405,26 @@ header {
     overflow: hidden;
 }
 
+.portfolio__container {
+    position: relative;
+    text-align: center;
+}
+
 .portfolio__img {
+    filter: brightness(50%);
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
 }
+
+.portfolio__title {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--clr-light);
+  }
 
 .portfolio__item:focus {
     position: relative;
@@ -421,6 +436,7 @@ header {
     transform: scale(1.2);
     opacity: .5;
 }
+
 
 /* Footer */
 
@@ -465,6 +481,12 @@ header {
 
 .footer__link:hover {
     text-decoration: underline;
+}
+
+@media(max-width: 600px) {
+    .footer__link {
+        font-size: 1rem;
+    }
 }
 
 /* Portfolio Individual Item Styles */
