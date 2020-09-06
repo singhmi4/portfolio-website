@@ -520,3 +520,18 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+.portfolio-item-individual__links {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item-individual__links a {
+    margin: 0 1em;
+}
+
+@media (max-width: 400px) {
+    .portfolio-item-individual__links {
+        display: block;
+    }
+}
