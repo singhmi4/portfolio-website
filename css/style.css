@@ -326,10 +326,7 @@ header {
 .service {
     max-width: 500px;
     margin: 0 auto;
-}
-
-.service p {
-    text-align: justify;
+    margin-bottom: 2em;
 }
 
 @media (min-width: 800px) {
@@ -338,6 +335,11 @@ header {
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 0;
+    }
+
+    .service {
+       width: 250px; 
     }
 
     .service + .service {
